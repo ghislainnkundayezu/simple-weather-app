@@ -1,0 +1,64 @@
+.carousel-track-container {
+    overflow: hidden;
+}
+
+
+
+.carousel-track {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    /* For smooth scrolling on iOS */
+    padding: 12px 0px;
+    cursor: grab;
+    
+}
+
+.carousel-slide {
+    /* flex: 0 0 auto; */
+    /* margin-right: 10px; */
+    scroll-snap-align: start;
+}
+
+/* Webkit (Chrome, Safari) */
+.carousel-track::-webkit-scrollbar {
+    height: 4px;
+}
+
+.carousel-track::-webkit-scrollbar-track {
+    background: var(--gray-100);
+}
+
+.carousel-track::-webkit-scrollbar-thumb {
+    width: 100px;
+    background: var(--indigo-500);
+    border-radius: 8px;
+}
+
+.carousel-track::-webkit-scrollbar-thumb:hover {
+    background: var(--blue);
+}
+
+/* Mozilla Firefox */
+.carousel-track {
+    scrollbar-width: auto;
+    /* "auto" or "thin" for Firefox */
+}
+
+.carousel-track::-moz-scrollbar {
+    height: 4px;
+}
+
+.carousel-track::-moz-scrollbar-track {
+    background: var(--gray-100);
+}
+
+.carousel-track::-moz-scrollbar-thumb {
+    width: 100px;
+    background: var(--indigo-500);
+    border-radius: 8px;
+}
+
+.carousel-track::-moz-scrollbar-thumb:hover {
+    background: var(--blue);
+}

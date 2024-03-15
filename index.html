@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="design/weather.css">
+    <link rel="icon" href="assets/images/logo.ico" type="image/x-icon" />
+    <title>Weatherly</title>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="The Logo of the website">
+                <p>Weatherly</p>
+            </div>
+        </div>
+    </nav>
+
+    <main id="welcome-page">
+        <div class="container">
+            <div class="search-view">
+                <input type="search" name="search-bar" class="search-field" placeholder="Search for cities" autocomplete="off">
+                <div class="search-results-container">
+                    
+                </div>
+            </div>
+            <div>OR</div>
+            <div class="user-location">
+                <button id="get-location">
+                    <span class="location-icon"></span>
+                    use your current location
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="js/mains.js"></script>
+</body>
+</html>
