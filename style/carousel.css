@@ -22,7 +22,7 @@
 
 /* Webkit (Chrome, Safari) */
 .carousel-track::-webkit-scrollbar {
-    height: 4px;
+    height: 8px;
 }
 
 .carousel-track::-webkit-scrollbar-track {

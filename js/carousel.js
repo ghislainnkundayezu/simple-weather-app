@@ -1,6 +1,5 @@
 // code to configure the carousel.
 export default function todaysForecastCarousel() {
-    let carouselContainer = document.querySelector(".carousel-track-container");
     let carouselTrack = document.querySelector(".carousel-track");
     let carouselSlide = document.querySelectorAll(".carousel-slide");
 
@@ -29,9 +28,7 @@ export default function todaysForecastCarousel() {
         if (!isDragging) return;
         event.preventDefault();
         const x = event.pageX - carouselTrack.offsetLeft;
-        const walk = (x - startX) * 2; // Adjust drag speed
-        carouselTrack.scrollLeft = scrollLeft - walk;
-        //console.log(carouselTrack.offsetLeft);
+        carouselTrack.scrollLeft = scrollLeft;
     }
 
     function endDrag() {

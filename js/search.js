@@ -46,18 +46,6 @@ function initializeSearch() {
                 }catch(error){
                     console.log("error")
                 }
-                // if (display==="no response") {
-                //     console.log(display)
-                //     let locationsObject = JSON.parse(localStorage.getItem("recent-searches"));
-                //     let locationsList = locationsObject.locations;
-                //     if (!locationsList.includes(cityName)) {
-                //         locationsList.push(cityName)
-                //         locationsObject.locations = locationsList;
-                //         localStorage.setItem("recent-searches", JSON.stringify(locationsObject));
-                //     }
-                    
-                
-                // }
                 
             }
             

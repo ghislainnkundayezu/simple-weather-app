@@ -32,8 +32,6 @@ export const fetchForecast = async function (resourceUrl) {
             throw error;
             
         });
-
-
 };
 
 
